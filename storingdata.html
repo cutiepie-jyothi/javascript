@@ -1,0 +1,46 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript">
+		function save(){
+			var how=document.getElementById("how").innerHTML
+			var user=document.getElementById("user").value
+            var thank=document.getElementById("u").innerHTML
+			console.log(how)
+			console.log(thank)
+			console.log(user)
+		}
+	</script>
+</head> 
+<body>
+   <p id="how">How are you</p>
+   <p id="u">Thank you</p>
+   <input id="user"/>
+   <button onclick="save()">submit</button>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript">
+		function count(){
+			var numberOfCharecters=30;
+			var msg=document.getElementById("msg").value
+			console.log(msg.length)
+			document.getElementById("showCount").innerHTML=numberOfCharecters-msg.length
+		}
+	</script>
+</head>
+<body>
+    <textarea id="msg" onkeyup="count()"></textarea>
+    <p>Number of characters left:
+       <span id="showCount">30</span>
+    </p>
+</body>
+</html>
